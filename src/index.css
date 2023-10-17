@@ -1,0 +1,37 @@
+@import './assets/base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.btn {
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+}
